@@ -7,6 +7,7 @@
                  [org.clojure/tools.analyzer.jvm "0.6.9"]
                  [org.scala-lang/scala-library "2.11.7"]]
   :plugins [[lein-zinc "1.2.0"]]
-  :java-source-paths ["src/scala"]
+  :source-paths ["src/clojure"]
+  :java-source-paths ["src/java" "src/scala"]
   :test-paths ["test" "test/java" "test/scala"]
   :prep-tasks ["zinc" "compile"])
